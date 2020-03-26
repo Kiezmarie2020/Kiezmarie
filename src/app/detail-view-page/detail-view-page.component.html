@@ -1,0 +1,42 @@
+<div class="container-fluid content-area">
+  <div class="row mt-0 mb-0">
+    <div  id="representative-img" class="col-12 col-md-5 left-img" style="background-image: url('--{{ offer.pictureURLs[0] }}');">
+    </div>
+    <div class="col-12 col-md-7">
+        <div class="container-fluid right-content">
+
+          <div class="row right-content-head">
+            <div class="col-12">
+              <h2 class="covid-green">{{ offer.businessName }}</h2>
+              <h3>{{ offer.businessCategory }}</h3>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12">
+              <h3 class="font-weight-bold">{{ offer.description }}</h3>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-3">
+              <img class="avatar" src="{{ offer.ownerPictureURL }}" alt="Avatar">
+            </div>
+            <div class="col-md-9 pt-4">
+              <p>{{ offer.quote != "" ? "&bdquo;" +  offer.quote + "&ldquo;" : "" }}</p>
+              <p>{{ offer.ownerName }}</p>
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="col-12">
+              <a routerLink="/order/{{ offer.id }}" class="buy-button">Gutschein kaufen</a>
+            </div>
+          </div>
+
+
+        </div>
+    </div>
+  </div>
+</div>

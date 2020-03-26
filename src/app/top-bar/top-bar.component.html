@@ -1,0 +1,26 @@
+<div id="top-bar">
+  <div id="menu-icon" (click)="showMenu()">
+    <img src="../../assets/menu.svg"  alt="menu" />
+  </div>
+  <div id="wirvsvirus">
+    <a href="https://wirvsvirushackathon.org/">
+      <img src="../../assets/wirvsvirus.svg" />
+    </a>
+  </div>
+  <div id="logo">
+    <a routerLink="/">
+      <img src="../../assets/kiezmarie.svg" />
+    </a>
+  </div>
+</div>
+<div id="sidebar-menu" [style.visibility]="isMenuVisible ? 'visible' : 'hidden'">
+  <div id="vertical-center-box-50">
+    <a routerLink="/" (click)="hideMenu()">St&auml;dte</a>
+    <a routerLink="/business" (click)="hideMenu()">Für Unternehmen</a>
+    <a routerLink="/about" (click)="hideMenu()">Unser Team</a>
+  </div>
+  <div id="menu-icon" (click)="hideMenu()">
+    <img  src="../../assets/x.svg"  alt="x" />
+  </div>
+
+  

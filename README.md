@@ -1,32 +1,27 @@
-# Setup
+# SaveLocalStoresFrontendCode
 
-```
-# If you don't have homebrew installed:
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.7.
 
-# Make sure that brew is up-to-date:
-brew update
+## Development server
 
-# Check that everything is fine by running:
-brew doctor
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-# Install node.js:
-brew install node
+## Code scaffolding
 
-# Check that you have npm properly installed (comes with node):
-npm -v
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-# Install the Angular CLI globally:
-npm install -g @angular/cli
+## Build
 
-# Navigate to Angular directory:
-cd save-local-stores-frontend-code
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-# Run frontend locally (--open (or just -o) automatically opens browser to http://localhost:4200/):
-ng serve --open
+## Running unit tests
 
-# Go to http://localhost:4200/
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-# Build for deployment (look in dist directory for build artifacts):
-ng build
-```
+## Running end-to-end tests
+
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
